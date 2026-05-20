@@ -5,6 +5,8 @@
 
 # 노션 카운트다운 타이머 위젯
 
+<img width="1920" height="944" alt="image" src="https://github.com/user-attachments/assets/79e9a56d-4679-4634-99b4-58368710554d" />
+
 노션 페이지에 깔끔하게 삽입할 수 있는 커스텀 카운트다운 타이머 위젯입니다. 노션 임베드 블록 크기에 맞춰 자동으로 크기가 조절되며, 이 위젯은 [Logwork](https://logwork.com/countdown-timer)의 소스코드를 활용하여 작동합니다.
 
 ## 📂 레포지토리 구조
