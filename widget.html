@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion Countdown Widget</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    #countdown-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    #countdown-container iframe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100% !important;
+      height: 100% !important;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="countdown-container"></div>
+
+  <script>
+    const countdownConfig = {
+      title: "최종 프로젝트 카운트다운",    // Countdown Title Text
+      date: "2026-06-18 12:00",         // Countdown D-day (YYYY-MM-DD HH:mm)
+      timezone: "Asia/Seoul",           // Countdown Timezone
+      language: "ko",                   // Countdown Time Units Language
+      colors: {
+        text: "#6e6e6e",                // Countdown Text Color
+        digits: "#ededed",              // Countdown Digits Color
+        units: "#8f8f8f"                // Countdown Time Units Color
+      }
+    };
+
+    const container = document.getElementById("countdown-container");
+    const timerLink = document.createElement("a");
+
+    timerLink.href = "https://logwork.com/countdown-timer";
+    timerLink.className = "countdown-timer";
+    timerLink.textContent = countdownConfig.title;
+
+    timerLink.dataset.timezone = countdownConfig.timezone;
+    timerLink.dataset.language = countdownConfig.language;
+    timerLink.dataset.date = countdownConfig.date;
+    timerLink.dataset.textcolor = countdownConfig.colors.text;
+    timerLink.dataset.digitscolor = countdownConfig.colors.digits;
+    timerLink.dataset.unitscolor = countdownConfig.colors.units;
+
+    container.appendChild(timerLink);
+
+    const script = document.createElement("script");
+    script.src = "https://cdn.logwork.com/widget/countdown.js";
+    document.body.appendChild(script);
+  </script>
+</body>
+</html>
