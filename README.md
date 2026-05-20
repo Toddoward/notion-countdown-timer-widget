@@ -4,6 +4,8 @@
 
 # Notion Countdown Timer Widget
 
+<img width="1920" height="944" alt="image" src="https://github.com/user-attachments/assets/33ab6f66-4007-48a6-b416-0b8d51be0177" />
+
 A simple, customizable countdown timer widget designed perfectly for Notion pages. This widget scales automatically to fit your Notion layout and is powered by the source code from [Logwork Countdown Timer](https://logwork.com/countdown-timer).
 
 ## 📂 Repository Structure
