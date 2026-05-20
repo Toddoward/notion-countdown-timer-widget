@@ -26,10 +26,11 @@ Open the `widget.html` file in your forked repository. Around line 42 inside the
 
 ```js
 const countdownConfig = {
-  title: "Final Presentation Countdown", // Widget Title Text
-  date: "2026-06-18 12:00",              // D-day (YYYY-MM-DD HH:mm)
-  timezone: "Asia/Seoul",                // Timezone
-  language: "ko",                        // Language
+  title: "UNIX Time Countdown",    // Widget Title Text
+  date: "2038-01-19 12:14:07",     // D-day (YYYY-MM-DD HH:mm:ss)
+  timezone: "Asia/Seoul",          // Timezone 
+  language: "ko",                  // Language ISO 639-1 code(ex: en, es, fr, it, uk, pl, ru, de, ko, ja)
+      colors: {
   colors: {
     text: "#6e6e6e",
     digits: "#ededed",

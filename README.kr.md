@@ -27,14 +27,15 @@ notion-countdown-timer-widget/
 
 ```js
 const countdownConfig = {
-  title: "최종 프로젝트 카운트다운",        // 위젯 상단에 표시될 제목
-  date: "2026-06-18 12:00",              // 목표 날짜 및 시간
-  timezone: "Asia/Seoul",                // 타임존 설정
-  language: "ko",                        // 시간 단위 언어 (예: ko, en)
+  title: "UNIX Time Countdown",   // 위젯 상단에 표시될 제목
+  date: "2038-01-19 12:14:07",    // 목표 날짜 및 시간 (YYYY-MM-DD HH:mm:ss)
+  timezone: "Asia/Seoul",         // 타임존 설정
+  language: "ko",                 // 시간 단위 언어 ISO 639-1 코드 (예시: en, es, fr, it, uk, pl, ru, de, ko, ja)
+      colors: {
   colors: {
-    text: "#6e6e6e",                     // 텍스트 색상
-    digits: "#ededed",                   // 숫자 색상
-    units: "#8f8f8f"                     // 단위(일, 시간, 분, 초) 색상
+    text: "#6e6e6e",            // 텍스트 색상
+    digits: "#ededed",          // 숫자 색상
+    units: "#8f8f8f"            // 단위(일, 시간, 분, 초) 색상
   }
 };
 ```
